@@ -6,7 +6,16 @@ This is a web scraper built with Golang and Colly that scrapes product data from
 
 `go run main.go -e <excel_file>`
 
-The Excel file should contain the schema with a sheet per retailer. Each sheet has columns for category, URL, product page element, product attributes etc. See the example file in the schemas directory.
+The Excel file should contain the schema with a sheet per retailer. Each sheet has columns for category, URL, product page element, product attributes etc.
+
+### Schema File
+See the example fle in the `schemas` directory.
+
+The schema is the list of columns representing either the location or html elements to be scrapped, with the header consisting field/attribute names of the type of attributes to be scraped or location fields name. The schema should always consist of the minimum these four columns:
+- Category
+- URL
+- Product Page
+- Next Catalog
 
 ## Code Structure
 
