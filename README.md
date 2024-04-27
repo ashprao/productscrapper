@@ -4,7 +4,7 @@ This is a web scraper built with Golang and Colly that scrapes product data from
 
 ## Usage
 
-`go run main.go -f <excel_file>`
+`go run main.go -e <excel_file>`
 
 The Excel file should contain the schema with a sheet per retailer. Each sheet has columns for category, URL, product page element, product attributes etc. See the example file in the schemas directory.
 
